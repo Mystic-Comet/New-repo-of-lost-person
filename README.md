@@ -1,1 +1,3 @@
-# Learn Neovim
+# Repository for lost person
+
+Nous sommes tous présent pour les membres perdu qui on besoin d'être encore plus perdu...
