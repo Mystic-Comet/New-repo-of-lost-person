@@ -1,0 +1,23 @@
+---
+
+name: linter Workflow
+
+# Le workflow se déclenchera quand on fera un git push sur main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  linter-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Étape pour afficher une vache avec cowsay
+      - name: linter
+        run: |
+          sudo apt-get update
+          sudo apt-get install npm
+          sudo npm install eslint --global
+          eslint --init
+          cowsay "Hello from GitHub Actions!"
